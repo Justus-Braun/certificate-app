@@ -13,6 +13,21 @@ bin-release/
 *.ipa
 *.apk
 
+
+certificate-app-frontend/node_modules/
+certificate-app-frontend/.expo/
+certificate-app-frontend/npm-debug.*
+*.jks
+*.p8
+*.p12
+*.key
+*.mobileprovision
+*.orig.*
+certificate-app-frontend/web-build/
+
+# macOS
+certificate-app-frontend/.DS_Store
+
 # Project files, i.e. `.project`, `.actionScriptProperties` and `.flexProperties`
 # should NOT be excluded as they contain compiler settings and other important
 # information for Eclipse / Flash Builder.
