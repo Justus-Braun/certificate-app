@@ -6,6 +6,9 @@ bin-release/
 
 # Other files and folders
 .settings/
+.vs/
+.appsettings.Development.json
+.appsettings.json
 
 # Executables
 *.swf
