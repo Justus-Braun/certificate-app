@@ -1,8 +1,6 @@
 import 'react-native-gesture-handler';
-import { Camera } from 'expo-camera';
 import React from 'react';
-import { render } from 'react-dom';
-import { View, Text, StyleSheet, TouchableOpacity, Button } from 'react-native';
+import { View, StyleSheet, Button } from 'react-native';
 import { OpenCamera } from './classes/Camera.js';
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
