@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import {StyleSheet, View, Text, Dimensions, Platform } from 'react-native';
+import {StyleSheet, View, Text, Dimensions, Platform, Button } from 'react-native';
 import { Camera } from 'expo-camera';
 import * as Permissions from 'expo-permissions';
 
@@ -24,6 +24,16 @@ export function OpenCamera() {
     getCameraStatus();
   }, []);
 
+  takePicture = () => {
+    if (camera) {
+        camera.takePictureAsync({ onPictureSaved: onPictureSaved });
+    }
+  };
+  
+  onPictureSaved = photo => {
+    console.log(photo);
+  }
+    
   // set the camera ratio and padding.
   // this code assumes a portrait mode screen
   const prepareRatio = async () => {
@@ -103,6 +113,13 @@ export function OpenCamera() {
             setCamera(ref);
           }}>
         </Camera>
+        <Button
+         title="Photo"
+         onPress={() => 
+          takePicture()
+        }
+         >
+        </Button>
       </View>
     );
   }
