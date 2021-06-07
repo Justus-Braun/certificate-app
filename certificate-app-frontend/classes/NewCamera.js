@@ -26,22 +26,42 @@ const styles = StyleSheet.create({
     borderRadius: 50,
     backgroundColor: '#fff'
   },
+  preViewPic: {
+    flex: 1,
+    width: '100%',
+    backgroundColor: 'transparent',
+    flexDirection: 'row'
+  },
+  CameraPreviewStyle: {
+    backgroundColor: 'transparent',
+    flex: 1,
+    width: '100%',
+    height: '100%'
+  }
 });
+
+const [previewVisible, setPreviewVisible] = useState(false)
+const [capturedImage, setCapturedImage] = useState<any>(null)
 
 export function OpenCamera2() {
     return {
         <Camera 
           style={styles.cameraStyle}
-          ref={(r) => {
-            camera = r
-          }}
-        >      
+          ref={
+            (r) => {camera = r}
+          }
+        >  
+          
+          <View style={styles.preViewPic}>
+            takePicButton();
+          </View>
+    
         </Camera>
     }
 }
 
 const function takePicButton() {
-  return {
+  return (
     <View style={styles.takeViewUp}
       <View style={styles.takeViewButton}
         <TouchableOpacity
@@ -50,7 +70,19 @@ const function takePicButton() {
         />
       </View>
     </View>
+  )
+}
+
+const __takePicture = async () => {
+  if (!camera) {
+    return 
   }
+  
+  const photo = await camera.takePictureAsync();
+  console.log(photo);
+  setPreviewVisible(true);
+  setCapturedImage(photo);
+  
 }
 
 const __startCamera = async () => {
@@ -62,4 +94,19 @@ const __startCamera = async () => {
   }else{
     Alert.alert("Acces denied");
   }
+}
+
+const CameraPreview = ({photo}: any) => {
+  console.log('sdsfds', photo);
+  
+  return (
+    <View style={styles.CameraPreviewStyle}>
+      <ImageBackground 
+        source={{uri: photo && photo.uri}}
+        style={{
+          flex: 1
+        }}
+      />
+    </View>
+  )
 }
