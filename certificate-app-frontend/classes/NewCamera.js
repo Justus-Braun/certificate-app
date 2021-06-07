@@ -20,11 +20,11 @@ export function OpenCamera2() {
 }
 
 const __startCamera = async () => {
-  const {status} = await Camera.requestPermissionAsync()
+  const {status} = await Camera.requestPermissionAsync();
   
   if(status === 'granted') {
     // do something 
   }else{
-    Alert.alert("Acces")
+    Alert.alert("Acces denied");
   }
 }
