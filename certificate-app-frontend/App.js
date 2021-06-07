@@ -9,24 +9,27 @@ function HomeScreen({ navigation }) {
   return (
     <View style={styles.container}>
       <View style={styles.otherContainer}>
+        
+        // Take Picture
         <TouchableOpacity
           onPress={() => navigation.navigate('Camera')}
-          style={styles.clickTakePicture}
+          style={styles.buttonStyle}
         >
           <Text style={styles.Text}>
-            Take picture
+              Take picture
           </Text>
         </TouchableOpacity>
-        <Button
-        title="Camera"
-        onPress={() => navigation.navigate('Camera')
-        }>
-        </Button>
-        <Button
-        title="History"
-        onPress={() => navigation.navigate('History')
-        }>          
-        </Button>
+
+        // History
+        <TouchableOpacity
+          onPress={() => navigation.navigate('History')}
+          style={styles.buttonStyle}
+        >
+          <Text style={styles.Text}>
+              See History
+          </Text>
+        </TouchableOpacity>
+
       </View>
     </View>
   )
@@ -47,7 +50,7 @@ export default function App() {
 }
 
 var styles = StyleSheet.create({
-  clickTakePicture: {
+  buttonStyle: {
     width: 130,
     borderRadius: 4,
     backgroundColor: '#14274e',
