@@ -10,25 +10,10 @@ function HomeScreen({ navigation }) {
     <View style={styles.container}>
       <View style={styles.otherContainer}>
         <TouchableOpacity
-          onPress={() => navigation.navigate('Camera')
-        }
-          style={{
-            width: 130,
-            borderRadius: 4,
-            backgroundColor: '#14274e',
-            flexDirection: 'row',
-            justifyContent: 'center',
-            alignItems: 'center',
-            height: 40
-          }}
+          onPress={() => navigation.navigate('Camera')}
+          style={styles.clickTakePicture}
         >
-          <Text
-            style={{
-              color: '#fff',
-              fontWeight: 'bold',
-              textAlign: 'center'
-            }}
-          >
+          <Text style={styles.Text}>
             Take picture
           </Text>
         </TouchableOpacity>
@@ -62,7 +47,20 @@ export default function App() {
 }
 
 var styles = StyleSheet.create({
-
+  clickTakePicture: {
+    width: 130,
+    borderRadius: 4,
+    backgroundColor: '#14274e',
+    flexDirection: 'row',
+    justifyContent: 'center',
+    alignItems: 'center',
+    height: 40
+  },
+  Text: {
+    color: '#fff',
+    fontWeight: 'bold',
+    textAlign: 'center'
+  },
   container: {
     flex: 1,
     flexDirection: 'column',
