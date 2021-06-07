@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="NONE" />
+  </component>
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:feature" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:feature" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="fd1eb502-d853-43ab-8020-654a6c856a9f" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="dev" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1snEQLoETHMEeu8ZY5hOGWDNZVT" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="emulator" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="fd1eb502-d853-43ab-8020-654a6c856a9f" name="Default Changelist" comment="" />
+      <created>1621499937408</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1621499937408</updated>
+      <workItem from="1621499940397" duration="416000" />
+      <workItem from="1621500373287" duration="877000" />
+      <workItem from="1621501270659" duration="2140000" />
+      <workItem from="1621518342958" duration="3624000" />
+      <workItem from="1621769235417" duration="2684000" />
+      <workItem from="1623009529364" duration="2515000" />
+    </task>
+    <task id="LOCAL-00001" summary="Changed Hello World to Hello Woooorld">
+      <created>1621501683409</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1621501683409</updated>
+    </task>
+    <task id="LOCAL-00002" summary="changed Hello World to Hello Woooorld">
+      <created>1621501790424</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1621501790424</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="CUSTOM_BOOLEAN_PROPERTIES">
+                <map>
+                  <entry key="Show.Git.Branches" value="true" />
+                </map>
+              </option>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="feature/open-camera-button" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Changed Hello World to Hello Woooorld" />
+    <MESSAGE value="changed Hello World to Hello Woooorld" />
+    <option name="LAST_COMMIT_MESSAGE" value="changed Hello World to Hello Woooorld" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="3480" y="505" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1621793958281">
+      <screen x="0" y="0" width="5120" height="1400" />
+    </state>
+    <state x="3480" y="505" key="#com.intellij.fileTypes.FileTypeChooser/0.0.5120.1400@0.0.5120.1400" timestamp="1621793958281" />
+    <state x="2383" y="100" width="2644" height="1207" key="AVDManager" timestamp="1621778417745">
+      <screen x="0" y="0" width="5120" height="1400" />
+    </state>
+    <state x="2383" y="100" width="2644" height="1207" key="AVDManager/0.0.5120.1400@0.0.5120.1400" timestamp="1621778417745" />
+    <state x="1008" y="125" key="MergeDialog" timestamp="1621779323384">
+      <screen x="0" y="0" width="5120" height="1400" />
+    </state>
+    <state x="1008" y="125" key="MergeDialog/0.0.5120.1400@0.0.5120.1400" timestamp="1621779323384" />
+    <state x="3206" y="348" key="SettingsEditor" timestamp="1621847266289">
+      <screen x="0" y="0" width="5120" height="1400" />
+    </state>
+    <state x="3206" y="348" key="SettingsEditor/0.0.5120.1400@0.0.5120.1400" timestamp="1621847266289" />
+    <state x="3475" y="416" key="git4idea.branch.GitSmartOperationDialog" timestamp="1621779308938">
+      <screen x="0" y="0" width="5120" height="1400" />
+    </state>
+    <state x="3475" y="416" key="git4idea.branch.GitSmartOperationDialog/0.0.5120.1400@0.0.5120.1400" timestamp="1621779308938" />
+    <state x="3361" y="334" key="run.anything.popup" timestamp="1621777722047">
+      <screen x="0" y="0" width="5120" height="1400" />
+    </state>
+    <state x="3361" y="334" key="run.anything.popup/0.0.5120.1400@0.0.5120.1400" timestamp="1621777722047" />
+    <state x="3368" y="320" width="672" height="678" key="search.everywhere.popup" timestamp="1621846898263">
+      <screen x="0" y="0" width="5120" height="1400" />
+    </state>
+    <state x="3368" y="320" width="672" height="678" key="search.everywhere.popup/0.0.5120.1400@0.0.5120.1400" timestamp="1621846898263" />
+  </component>
+</project>
