@@ -1,6 +1,6 @@
 import 'react-native-gesture-handler';
 import React from 'react';
-import { View, StyleSheet, Button } from 'react-native';
+import { View, StyleSheet, Button, TouchableOpacity } from 'react-native';
 import { OpenCamera } from './classes/Camera.js';
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
@@ -9,6 +9,29 @@ function HomeScreen({ navigation }) {
   return (
     <View style={styles.container}>
       <View style={styles.otherContainer}>
+        <TouchableOpacity
+          onPress={() => navigation.navigate('Camera')
+        }
+          style={{
+            width: 130,
+            borderRadius: 4,
+            backgroundColor: '#14274e',
+            flexDirection: 'row',
+            justifyContent: 'center',
+            alignItems: 'center',
+            height: 40
+          }}
+        >
+          <Text
+            style={{
+              color: '#fff',
+              fontWeight: 'bold',
+              textAlign: 'center'
+            }}
+          >
+            Take picture
+          </Text>
+        </TouchableOpacity>
         <Button
         title="Camera"
         onPress={() => navigation.navigate('Camera')
