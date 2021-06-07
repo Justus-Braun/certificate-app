@@ -23,7 +23,8 @@ const __startCamera = async () => {
   const {status} = await Camera.requestPermissionAsync();
   
   if(status === 'granted') {
-    // do something 
+    // start the camera
+    setStartCamera(true);
   }else{
     Alert.alert("Acces denied");
   }
