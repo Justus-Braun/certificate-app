@@ -74,6 +74,7 @@ const function takePicButton() {
 }
 
 const __takePicture = async () => {
+  
   if (!camera) {
     return 
   }
