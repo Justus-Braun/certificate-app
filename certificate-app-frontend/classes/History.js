@@ -8,14 +8,14 @@ export function OpenHistory() {
     <View style={{ flex: 1 }}>
       <ViewPager style={styles.viewPager} initialPage={0}>
         <View style={styles.page} key="1">
-          <Text>First page</Text>
+          <Text>First Certificate</Text>
           <Text>Swipe ➡️</Text>
         </View>
         <View style={styles.page} key="2">
-          <Text>Second page</Text>
+          <Text>Second Certificate</Text>
         </View>
         <View style={styles.page} key="3">
-          <Text>Third page</Text>
+          <Text>Third Certificate</Text>
         </View>
       </ViewPager>
     </View>
