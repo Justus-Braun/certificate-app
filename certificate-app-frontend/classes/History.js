@@ -4,23 +4,31 @@ import {StyleSheet, View, Text } from 'react-native';
 import ViewPager from '@react-native-community/viewpager';
 
 export function OpenHistory() {
-  
+      return (
+    <View style={{ flex: 1 }}>
+      <ViewPager style={styles.viewPager} initialPage={0}>
+        <View style={styles.page} key="1">
+          <Text>First page</Text>
+          <Text>Swipe ➡️</Text>
+        </View>
+        <View style={styles.page} key="2">
+          <Text>Second page</Text>
+        </View>
+        <View style={styles.page} key="3">
+          <Text>Third page</Text>
+        </View>
+      </ViewPager>
+    </View>
+  );
   }
 }
 
 const styles = StyleSheet.create({
-  information: { 
+  viewPager: {
     flex: 1,
+  },
+  page: {
     justifyContent: 'center',
-    alignContent: 'center',
     alignItems: 'center',
-  },
-  container: {
-    flex: 1,
-    backgroundColor: '#000',
-    justifyContent: 'center',
-  },
-  cameraPreview: {
-    flex: 1,
   }
 });
