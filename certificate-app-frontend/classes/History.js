@@ -37,6 +37,7 @@ const styles = StyleSheet.create({
     paddingTop: 50,
   },
   logo: {
+        // Maybe getSize and subtract 10 by it
     width: 66,
     height: 58,
   },
