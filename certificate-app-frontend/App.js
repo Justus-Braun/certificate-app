@@ -27,6 +27,7 @@ export default function App() {
       <Stack.Navigator initialRouteName="Home">
         <Stack.Screen name="Home" component={HomeScreen} options={{ title: 'certificate-app', headerTitleStyle: { alignSelf: 'center' }}}/>
         <Stack.Screen name="Camera" component={OpenCamera} />
+        <Stack.Screen name="History" component={OpenHistory} />
       </Stack.Navigator>
     </NavigationContainer>
   )
