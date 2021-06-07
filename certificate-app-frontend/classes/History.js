@@ -40,4 +40,9 @@ const styles = StyleSheet.create({
     width: 66,
     height: 58,
   },
+  stretch: {
+    width: 50,
+    height: 200,
+    resizeMode: 'stretch',
+  },
 });
