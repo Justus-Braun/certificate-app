@@ -9,13 +9,7 @@ export function OpenHistory() {
       <ViewPager style={styles.viewPager} initialPage={0}>
         <View style={styles.page} key="1">
           <Text>First Certificate</Text>
-            <Image
-             style={styles.logo}
-             source={{
-              uri:
-              'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADMAAAAzCAYAAAA6oTAqAAAAEXRFWHRTb2Z0d2FyZQBwbmdjcnVzaEB1SfMAAABQSURBVGje7dSxCQBACARB+2/ab8BEeQNhFi6WSYzYLYudDQYGBgYGBgYGBgYGBgYGBgZmcvDqYGBgmhivGQYGBgYGBgYGBgYGBgYGBgbmQw+P/eMrC5UTVAAAAABJRU5ErkJggg==',
-               }}
-              />
+            <Image style={styles.stretch} source={require('@expo/snack-static/react-native-logo.png')} />
           <Text>Swipe ➡️</Text>
         </View>
         <View style={styles.page} key="2">
