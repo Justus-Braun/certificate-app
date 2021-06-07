@@ -14,6 +14,11 @@ function HomeScreen({ navigation }) {
         onPress={() => navigation.navigate('Camera')
         }>
         </Button>
+        <Button
+        title="History"
+        onPress={() => navigation.navigate('History')
+        }>          
+        </Button>
       </View>
     </View>
   )
