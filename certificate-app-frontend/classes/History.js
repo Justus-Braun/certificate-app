@@ -3,7 +3,7 @@ import {StyleSheet, View, Text, Dimensions, Platform, Button } from 'react-nativ
 import { Camera } from 'expo-camera';
 import * as Permissions from 'expo-permissions';
 
-export function OpenCamera() {
+export function OpenHistory() {
   //  camera permissions
   const [hasCameraPermission, setHasCameraPermission] = useState(null);
   const [camera, setCamera] = useState(null);
