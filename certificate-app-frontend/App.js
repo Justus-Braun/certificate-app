@@ -1,7 +1,8 @@
 import 'react-native-gesture-handler';
 import React from 'react';
 import { View, StyleSheet, Button, TouchableOpacity } from 'react-native';
-import { OpenCamera } from './classes/Camera.js';
+import { OpenCamera3 } from './classes/CameraFinal.js';
+import { OpenHistory } from './classes/History.js'
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 
@@ -17,6 +18,16 @@ function HomeScreen({ navigation }) {
         >
           <Text style={styles.Text}>
               Take picture
+          </Text>
+        </TouchableOpacity>
+
+        // Take Picture
+        <TouchableOpacity
+            onPress={() => navigation.navigate('Camera New')}
+            style={styles.buttonStyle}
+        >
+          <Text style={styles.Text}>
+            Take picture New
           </Text>
         </TouchableOpacity>
 
@@ -42,12 +53,14 @@ export default function App() {
     <NavigationContainer>
       <Stack.Navigator initialRouteName="Home">
         <Stack.Screen name="Home" component={HomeScreen} options={{ title: 'certificate-app', headerTitleStyle: { alignSelf: 'center' }}}/>
-        <Stack.Screen name="Camera" component={OpenCamera} />
+        <Stack.Screen name="CameraNew" component={OpenCamera3} />
         <Stack.Screen name="History" component={OpenHistory} />
       </Stack.Navigator>
     </NavigationContainer>
   )
 }
+
+// Export StyleSheet in single files
 
 var styles = StyleSheet.create({
   buttonStyle: {

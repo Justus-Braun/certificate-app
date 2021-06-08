@@ -9,7 +9,7 @@ export function OpenHistory() {
       <ViewPager style={styles.viewPager} initialPage={0}>
         <View style={styles.page} key="1">
           <Text>First Certificate</Text>
-            <Image style={styles.stretch} source={require('@expo/snack-static/react-native-logo.png')} />
+            <Image style={styles.stretch} source={require('../img/familyPic.jpg')} />
           <Text>Swipe ➡️</Text>
         </View>
         <View style={styles.page} key="2">
@@ -20,8 +20,7 @@ export function OpenHistory() {
         </View>
       </ViewPager>
     </View>
-  );
-  }
+   )
 }
 
 const styles = StyleSheet.create({

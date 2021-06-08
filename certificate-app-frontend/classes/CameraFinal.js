@@ -1,9 +1,8 @@
-import {StatusBar} from 'expo-status-bar'
 import React from 'react'
 import {StyleSheet, Text, View, TouchableOpacity, Alert, ImageBackground, Image} from 'react-native'
+import {StatusBar} from 'expo-status-bar'
 import {Camera} from 'expo-camera'
 let camera: Camera
-
 export function OpenCamera3() {
   const [startCamera, setStartCamera] = React.useState(false)
   const [previewVisible, setPreviewVisible] = React.useState(false)
@@ -19,22 +18,19 @@ export function OpenCamera3() {
       Alert.alert('Access denied')
     }
   }
-  
   const __takePicture = async () => {
-    const photo: any = await camera.takePictureAsync()
+    const photo : any = await camera.takePictureAsync()
     console.log(photo)
     setPreviewVisible(true)
     //setStartCamera(false)
     setCapturedImage(photo)
   }
-  
   const __savePhoto = () => {}
   const __retakePicture = () => {
     setCapturedImage(null)
     setPreviewVisible(false)
     __startCamera()
   }
-  
   return (
     <View style={styles.container}>
       {startCamera ? (
@@ -117,15 +113,15 @@ export function OpenCamera3() {
               height: 40
             }}
           >
-            <Text
-              style={{
-                color: '#fff',
-                fontWeight: 'bold',
-                textAlign: 'center'
-              }}
-            >
-              Take picture
-            </Text>
+              <Text
+                  style={{
+                      color: '#fff',
+                      fontWeight: 'bold',
+                      textAlign: 'center'
+                  }}
+              >
+                  Take picture
+              </Text>
           </TouchableOpacity>
         </View>
       )}

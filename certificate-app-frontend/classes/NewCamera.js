@@ -1,4 +1,4 @@
-import {Camera} from 'expo-camera';
+/*import {Camera} from 'expo-camera';
 
 const styles = StyleSheet.create({
   cameraStyle: {
@@ -111,3 +111,4 @@ const CameraPreview = ({photo}: any) => {
     </View>
   )
 }
+*/
