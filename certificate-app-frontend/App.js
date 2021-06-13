@@ -1,49 +1,45 @@
-import 'react-native-gesture-handler';
 import React from 'react';
-import { View, StyleSheet, Button, TouchableOpacity } from 'react-native';
-import { OpenCamera3 } from './classes/CameraFinal.js';
+import { View, StyleSheet, Text, Button, TouchableOpacity } from 'react-native';
+// import { OpenCamera3 } from './classes/CameraFinal.js';
+import { OpenCamera } from './classes/Camera.js';
 import { OpenHistory } from './classes/History.js'
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 
 function HomeScreen({ navigation }) {
+
+
+
   return (
     <View style={styles.container}>
       <View style={styles.otherContainer}>
-        
-        // Take Picture
-        <TouchableOpacity
-          onPress={() => navigation.navigate('Camera')}
-          style={styles.buttonStyle}
-        >
-          <Text style={styles.Text}>
-              Take picture
-          </Text>
-        </TouchableOpacity>
-
-        // Take Picture
-        <TouchableOpacity
-            onPress={() => navigation.navigate('Camera New')}
-            style={styles.buttonStyle}
-        >
-          <Text style={styles.Text}>
-            Take picture New
-          </Text>
-        </TouchableOpacity>
-
-        // History
-        <TouchableOpacity
-          onPress={() => navigation.navigate('History')}
-          style={styles.buttonStyle}
-        >
-          <Text style={styles.Text}>
-              See History
-          </Text>
-        </TouchableOpacity>
-
+        <CameraFanc />
+        <HistoryFanc />
       </View>
     </View>
   )
+}
+
+const CameraFanc = () => {
+  // Take Picture
+  const navToCamera = () => navigation.navigate('Camera');
+
+  return (
+      <TouchableOpacity onPress={navToCamera} style={styles.buttonStyle}>
+        <Text style={styles.TextStyle}>Take picture</Text>
+      </TouchableOpacity>
+  );
+}
+
+const HistoryFanc = () => {
+  // History
+  const navToHisory = () => navigation.navigate('History');
+
+  return (
+      <TouchableOpacity onPress={navToHisory} style={styles.buttonStyle}>
+        <Text style={styles.TextStyle}>See History</Text>
+      </TouchableOpacity>
+  );
 }
 
 const Stack = createStackNavigator();
@@ -53,7 +49,7 @@ export default function App() {
     <NavigationContainer>
       <Stack.Navigator initialRouteName="Home">
         <Stack.Screen name="Home" component={HomeScreen} options={{ title: 'certificate-app', headerTitleStyle: { alignSelf: 'center' }}}/>
-        <Stack.Screen name="CameraNew" component={OpenCamera3} />
+        <Stack.Screen name="Camera" component={OpenCamera} />
         <Stack.Screen name="History" component={OpenHistory} />
       </Stack.Navigator>
     </NavigationContainer>
@@ -72,7 +68,7 @@ var styles = StyleSheet.create({
     alignItems: 'center',
     height: 40
   },
-  Text: {
+  TextStyle: {
     color: '#fff',
     fontWeight: 'bold',
     textAlign: 'center'

@@ -9,7 +9,7 @@ export function OpenHistory() {
       <ViewPager style={styles.viewPager} initialPage={0}>
         <View style={styles.page} key="1">
           <Text>First Certificate</Text>
-            <Image style={styles.stretch} source={require('../img/familyPic.jpg')} />
+            <Image style={styles.stretch} source={require('../img/TestImg.png')} />
           <Text>Swipe ➡️</Text>
         </View>
         <View style={styles.page} key="2">

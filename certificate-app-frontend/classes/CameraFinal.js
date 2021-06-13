@@ -1,3 +1,4 @@
+/*
 import React from 'react'
 import {StyleSheet, Text, View, TouchableOpacity, Alert, ImageBackground, Image} from 'react-native'
 import {StatusBar} from 'expo-status-bar'
@@ -17,8 +18,7 @@ export function OpenCamera3() {
     } else {
       Alert.alert('Access denied')
     }
-  }
-  const __takePicture = async () => {
+  }  const __takePicture = async () => {
     const photo : any = await camera.takePictureAsync()
     console.log(photo)
     setPreviewVisible(true)
@@ -215,3 +215,4 @@ const CameraPreview = ({photo, retakePicture, savePhoto}: any) => {
     </View>
   )
 }
+*/
