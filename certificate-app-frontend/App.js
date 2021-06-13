@@ -11,7 +11,7 @@ import { createStackNavigator } from '@react-navigation/stack';
 
 function HomeScreen({navigation}) {
   return (
-      <View style={{alignItems: 'center', width:'100%', height: 780}}>
+      <View style={{alignItems: 'center',paddingBottom: 20, width:'100%', height: 780}}>
         <CameraField />
         <HistoryField />
         <SettingsField />

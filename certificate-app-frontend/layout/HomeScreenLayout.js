@@ -1,43 +1,49 @@
 import React from 'react';
-import { View, Text, Button } from 'react-native';
+import { View, Text, Button,TouchableOpacity } from 'react-native';
 import {stylesCamera, stylesHistory, stylesSettings} from '../styles/homeTest.js'
 
 // export const CameraField = (props) => {
 export function CameraField() {
     return (
         <View style={stylesCamera.container}>
-            <Button styles={stylesCamera.button} title="Add Certificate"/>
+            <TouchableOpacity
+                style={stylesCamera.button}
+                onPress={() => {}}
+            >
+                <Text style={stylesCamera.text}>Add Certificate</Text>
+            </TouchableOpacity>
         </View>
-        /*
-        <div className="Camera">
-           <!--<button onClick={props.OpenCamera}>Add Certificate</button>-->
-            <button>Add Certificate</button>
-        </div>
-
-         */
     );
 };
 
 export function HistoryField() {
     return (
         <View style={stylesHistory.container}>
-            <Button styles={stylesHistory.button} title="History"/>
+            <TouchableOpacity
+                style={stylesHistory.button}
+                onPress={() => {}}
+            >
+                <Text style={stylesHistory.text}>History</Text>
+            </TouchableOpacity>
         </View>
-        /*
-        <div className="History">
-            <button>History</button>
-        </div>
-
-         */
     );
 }
 
 export function SettingsField() {
     return (
         <View style={stylesSettings.container}>
-            <Button styles={stylesSettings.button}title="Settings"/>
+            <TouchableOpacity
+                style={stylesSettings.button}
+                onPress={() => {}}
+            >
+                <Text style={stylesSettings.text}>Settings</Text>
+            </TouchableOpacity>
         </View>
         /*
+        <View style={stylesSettings.container}>
+            <Button styles={stylesSettings.button}title="Settings"/>
+        </View>
+
         <div className="Settings">
             <button>Settings</button>
         </div>
