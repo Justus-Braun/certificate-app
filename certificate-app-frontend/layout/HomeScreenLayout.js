@@ -39,15 +39,5 @@ export function SettingsField() {
                 <Text style={stylesSettings.text}>Settings</Text>
             </TouchableOpacity>
         </View>
-        /*
-        <View style={stylesSettings.container}>
-            <Button styles={stylesSettings.button}title="Settings"/>
-        </View>
-
-        <div className="Settings">
-            <button>Settings</button>
-        </div>
-
-         */
     );
 }

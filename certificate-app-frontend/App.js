@@ -3,7 +3,6 @@ import React from 'react';
 import { View, Button } from 'react-native';
 
 import { OpenCamera } from './classes/Camera.js';
-import { homeStyles } from "./styles/homeScreen.js";
 import { CameraField, HistoryField, SettingsField } from "./layout/HomeScreenLayout.js";
 
 import { NavigationContainer } from '@react-navigation/native';
