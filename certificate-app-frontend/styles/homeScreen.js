@@ -11,7 +11,6 @@ export var stylesCamera = StyleSheet.create({
         justifyContent: "center",
     },
     button: {
-
         borderWidth: 1,
         borderColor: 'black',
         paddingHorizontal: 30,
@@ -68,5 +67,22 @@ export var stylesSettings = StyleSheet.create({
         fontSize: 50,
         fontWeight: '400',
         color: "#C2C8CE",
+    }
+});
+
+export var stylesImageView = StyleSheet.create({
+    container: {
+        height: '50%',
+        width: '95%',
+        borderColor: 'black',
+        borderWidth: 1,
+        alignItems: 'center',
+        justifyContent: "center",
+    },
+    button: {
+
+    },
+    text: {
+
     }
 });
