@@ -1,22 +1,32 @@
 import React from 'react';
-import { View, Text, Button,TouchableOpacity } from 'react-native';
-import {stylesCamera, stylesHistory, stylesSettings} from '../styles/homeTest.js'
+import { View, Text, Image,TouchableOpacity } from 'react-native';
+import {stylesCamera, stylesHistory, stylesSettings, stylesImageView} from '../styles/homeScreen.js'
 
-// export const CameraField = (props) => {
-export function CameraField() {
+export const CameraField = (props) => {
+// export function CameraField() {
     return (
         <View style={stylesCamera.container}>
             <TouchableOpacity
                 style={stylesCamera.button}
-                onPress={() => {}}
+                onPress={() => {props.onPressFunc}}
             >
-                <Text style={stylesCamera.text}>Add Certificate</Text>
+                <Text style={stylesCamera.text}>Add certificate</Text>
             </TouchableOpacity>
         </View>
     );
 };
 
-export function HistoryField() {
+export const ImageView = (props) => {
+    return (
+        <View style={stylesImageView.container}>
+            <Image source={{ uri:  ''}}>
+
+            </Image>
+        </View>
+    );
+}
+
+export const HistoryField = (props) => {
     return (
         <View style={stylesHistory.container}>
             <TouchableOpacity
