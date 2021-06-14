@@ -3,7 +3,8 @@ import React from 'react';
 import { View, Button } from 'react-native';
 
 import { OpenCamera } from './classes/Camera.js';
-import { CameraField, HistoryField, SettingsField } from "./layout/HomeScreenLayout.js";
+import { CameraField, HistoryField, ImageView , SettingsField } from "./layout/HomeScreenLayout.js";
+import { OpenHistory } from "./layout/HistoryScreenLayout.js";
 
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
@@ -11,12 +12,13 @@ import { createStackNavigator } from '@react-navigation/stack';
 function HomeScreen({navigation}) {
   return (
       <View style={{alignItems: 'center',paddingBottom: 20, width:'100%', height: 780}}>
-        <CameraField />
+        <CameraField onPressFunc={navigation.navigate('Camera')}  />
         <HistoryField />
         <SettingsField />
       </View>
 
       /*
+
       <View style={homeStyles.container}>
         <View style={homeStyles.otherContainer}>
           <Button
@@ -38,17 +40,11 @@ export default function App() {
 
     <NavigationContainer>
       <Stack.Navigator initialRouteName="Home">
-        <Stack.Screen name="Home" component={HomeScreen} options={{ title: 'Test-app', headerTitleStyle: { alignSelf: 'center' }}}/>
+        <Stack.Screen name="Home" component={HomeScreen} options={{ title: 'Certificate-app', headerTitleStyle: { alignSelf: 'center' }}}/>
         <Stack.Screen name="Camera" component={OpenCamera} />
+        <Stack.Screen name="History" component={OpenHistory} />
       </Stack.Navigator>
     </NavigationContainer>
   )
 }
 
-const layout = () => {
-  return (
-    <Fill>
-
-    </Fill>
-  )
-}
