@@ -5,7 +5,6 @@ bin-release/
 [Bb]in/
 
 # Other files and folders
-.idea/
 .settings/
 .vs/
 .vscode/
