@@ -34,12 +34,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fd1eb502-d853-43ab-8020-654a6c856a9f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/certificate-app-frontend/assets/github.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/certificate-app-frontend/layout/HistoryScreenLayout.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/certificate-app-frontend/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/certificate-app-frontend/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/certificate-app-frontend/layout/HomeScreenLayout.js" beforeDir="false" afterPath="$PROJECT_DIR$/certificate-app-frontend/layout/HomeScreenLayout.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/certificate-app-frontend/styles/homeTest.js" beforeDir="false" afterPath="$PROJECT_DIR$/certificate-app-frontend/styles/homeScreen.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
