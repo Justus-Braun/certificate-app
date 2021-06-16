@@ -1,21 +1,35 @@
 import 'react-native-gesture-handler';
 import React from 'react';
-import { View, StyleSheet, Button } from 'react-native';
+import { View, Button } from 'react-native';
+
 import { OpenCamera } from './classes/Camera.js';
+import { CameraField, HistoryField, ImageView , SettingsField } from "./layout/HomeScreenLayout.js";
+import { OpenHistory } from "./layout/HistoryScreenLayout.js";
+
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 
-function HomeScreen({ navigation }) {
+function HomeScreen({navigation}) {
   return (
-    <View style={styles.container}>
-      <View style={styles.otherContainer}>
-        <Button
-        title="Camera"
-        onPress={() => navigation.navigate('Camera')
-        }>
-        </Button>
+      <View style={{alignItems: 'center',paddingBottom: 20, width:'100%', height: 780}}>
+        <CameraField onPressFunc={navigation.navigate('Camera')}  />
+        <HistoryField />
+        <SettingsField />
       </View>
-    </View>
+
+      /*
+
+      <View style={homeStyles.container}>
+        <View style={homeStyles.otherContainer}>
+          <Button
+              title="Camera"
+              onPress={() => navigation.navigate('Camera')
+              }>
+          </Button>
+        </View>
+      </View>
+      */
+
   )
 }
 
@@ -23,48 +37,14 @@ const Stack = createStackNavigator();
 
 export default function App() {
   return (
+
     <NavigationContainer>
       <Stack.Navigator initialRouteName="Home">
-        <Stack.Screen name="Home" component={HomeScreen} options={{ title: 'certificate-app', headerTitleStyle: { alignSelf: 'center' }}}/>
+        <Stack.Screen name="Home" component={HomeScreen} options={{ title: 'Certificate-app', headerTitleStyle: { alignSelf: 'center' }}}/>
         <Stack.Screen name="Camera" component={OpenCamera} />
+        <Stack.Screen name="History" component={OpenHistory} />
       </Stack.Navigator>
     </NavigationContainer>
   )
 }
 
-var styles = StyleSheet.create({
-
-  container: {
-    flex: 1,
-    flexDirection: 'column',
-    backgroundColor: 'white',
-    justifyContent: 'center',
-    alignItems: 'center',
-  },
-  topBox: {
-    flex: 1,
-    flexDirection: 'row',
-    justifyContent: 'center',
-    alignItems: 'center',
-  },
-  headline: {
-    textAlign: 'center',
-    fontWeight: 'bold',
-    fontSize: 24,
-    marginTop: 0,
-    width: 200,
-  },
-  marginTop: {
-    width: 200,
-    height: 80,
-  },
-  otherContainer: {
-    flex: 4,
-    justifyContent: 'center',
-    alignItems: 'center',
-    backgroundColor: 'green',
-  },
-  button: {
-
-  },
-});
